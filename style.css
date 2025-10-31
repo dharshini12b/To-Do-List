@@ -1,0 +1,92 @@
+body{
+    margin:0;
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(145deg, rgba(34,98,98,0.7), rgba(50, 129, 123,0.4))
+}
+h1{
+   color: rgba(3, 57, 57, 0.7);
+   padding: 5px;
+}
+.main_box{
+   padding: 30px;
+   border: 2px solid black;
+   border-radius: 5px;
+   box-sizing: border-box;
+}
+label{
+    font-weight: bold;
+    color: rgba(8, 68, 68,1);
+}
+input[type="text"], .add_task{
+    border: 1px solid rgba(20, 101, 101, 0.7);
+    border-radius: 5px;
+    padding:10px;
+    width: 55%;
+}
+.add_task{
+    width:15%;
+}
+.add_task,button{
+    color: white;
+    background-color: rgba(8, 68, 68,0.8);
+    cursor: pointer;
+}
+.add_task:hover,button{
+    background-color: rgba(20, 101, 101, 0.7);
+}
+.php_display{
+    text-align: center;
+    padding:5px;
+    margin-top: 2px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.error{
+    color: rgb(228, 74, 74);
+}
+.success{
+    color: rgb(20, 112, 80);
+}
+.visible{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+ol{
+    padding: 20px;
+}
+ol li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(44, 113, 113, 0.1);
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    
+}
+ol li a{
+    text-decoration: none;
+    margin: 10px;
+    color: aliceblue;
+    padding:10px;
+}
+.action{
+    border:20 solid  rgba(8, 68, 68,0.8);
+    padding: 10px 3px;
+}
+.action:hover{
+    background-color: rgba(16, 144, 144, 0.8);
+}
+.encourage{
+    margin:3px;
+    color: rgb(17, 59, 59);
+    font-weight: 500;
+}
